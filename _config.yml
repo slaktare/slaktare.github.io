@@ -1,9 +1,9 @@
 # Site settings
 title: slaktare.github.io
 #email: your-email@domain.com
-description: "slaktare :-E"
+#description: ""
 baseurl: ""
-url: "http://yourdomain.com"
+#url: "http://slaktare.github.io"
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
