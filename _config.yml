@@ -1,12 +1,8 @@
 # Site settings
-title: slaktare.github.io
-#email: your-email@domain.com
-#description: ""
-#baseurl: ""
-#url: "http://slaktare.github.io"
-#twitter_username: jekyllrb
-#github_username:  jekyll
+title:		slaktare.github.io
+safe:		true
+timezone:	Europe/Gibraltar
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+markdown:	kramdown
+permalink:	pretty
