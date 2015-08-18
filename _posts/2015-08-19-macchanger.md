@@ -16,7 +16,7 @@ Create and edit (as superuser) the file /etc/systemd/system/macspoof@.service fo
 	After=sys-subsystem-net-devices-%i.device
 	
 	[Service]
-	ExecStart=/usr/bin/macchanger -r %I
+	ExecStart=/usr/bin/macchanger -a %I
 	Type=oneshot
 	
 	[Install]
