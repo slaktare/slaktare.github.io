@@ -2,7 +2,7 @@
 layout: post
 title:  "macchanger"
 date:   2015-08-19 00:15:00
-categories: slaktare linux security
+categories: 
 ---
 
 The description below follows the "Method 3" section reported in [this tutorial](http://wiki.archlinux.org/index.php/MAC_address_spoofing).
