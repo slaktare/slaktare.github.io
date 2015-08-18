@@ -22,7 +22,7 @@ Create and edit (as superuser) the file /etc/systemd/system/macspoof@.service fo
 	[Install]
 	WantedBy=multi-user.target
 
-Enable the service (as superuser) by appending the interface name (e,g, wlan0): 
+Enable the service (as superuser) by appending the interface name (e.g., wlan0): 
 
 	user@machine:~# systemctl enable macspoof@wlan.service
 
