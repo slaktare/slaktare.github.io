@@ -5,5 +5,5 @@ timezone:	Europe/Gibraltar
 
 # Build settings
 markdown:	kramdown
-permalink:	:year:month:day-:title.html
+permalink:	:short_year:month:day-:title.html
 
