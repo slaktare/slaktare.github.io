@@ -24,6 +24,6 @@ Create and edit (as superuser) the file /etc/systemd/system/macspoof@.service fo
 
 Enable the service (as superuser) by appending the interface name (e.g., wlan0): 
 
-	user@machine:~# systemctl enable macspoof@wlan.service
+	user@machine:~# systemctl enable macspoof@wlan0.service
 
 Reboot, or stop and start the prerequisite and requisite services in the proper order.
