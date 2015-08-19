@@ -5,6 +5,16 @@ date:   2015-08-19 00:15:00
 categories: 
 ---
 
+The following scripts will randomize your network interfaces' MAC addresses on cold boot and after waking your device from suspend. Read [this](https://hal.archives-ouvertes.fr/file/index/docid/858324/filename/Wi-Fi_Stalking.pdf) to understand why randomizing your MAC addresses might be a good idea.
+
+Prerequisites
+-------------
+
+Install the `macchanger` package:
+
+    user@machine:~# sudo apt-get install macchanger
+
+
 Change MAC on startup (via systemd)
 -----------------------------------
 
@@ -27,7 +37,7 @@ Create and edit (as superuser) the file /etc/systemd/system/macspoof@.service fo
 
 Enable the service (as superuser) by appending the interface name (e.g., `wlan0`): 
 
-	user@machine:~# systemctl enable macspoof@wlan0.service
+	user@machine:~# sudo systemctl enable macspoof@wlan0.service
 
 Reboot, or stop and start the prerequisite and requisite services in the proper order.
 
@@ -44,6 +54,6 @@ You can use a script which NetworkManager invokes before bringing the interface 
     macchanger -a $1
     ip link set dev $1 up
     
-Finally, make the .sh script executable:
+Finally, make the script executable:
 
-    user@machine:~# chmod +x macpoof.sh
+    user@machine:~# sudo chmod +x macpoof.sh
